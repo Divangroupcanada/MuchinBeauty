@@ -312,3 +312,18 @@ section { padding: 100px 0; }
   .options .option { flex-direction: column; gap: 4px; }
   .option .o-meta { white-space: normal; }
 }
+
+/* ===== Instagram sections (added) ===== */
+.ig-section{padding:90px 0;background:var(--bg);}
+.ig-section.alt{background:var(--bg-2);}
+.ig-accent{color:var(--gold);font-style:italic;}
+.ig-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;margin-top:38px;}
+.ig-photo{position:relative;display:block;aspect-ratio:1/1;background-size:cover;background-position:center;border:1px solid var(--line);overflow:hidden;transition:transform .45s ease,border-color .3s ease;}
+.ig-photo:hover{transform:scale(1.025);border-color:var(--gold);}
+.ig-photo::after{content:'↗';position:absolute;top:10px;right:12px;color:#fff;opacity:0;transition:opacity .3s ease;font-size:15px;text-shadow:0 1px 5px rgba(0,0,0,.6);}
+.ig-photo:hover::after{opacity:1;}
+.ig-reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:30px;}
+.ig-reel-cell{border:1px solid var(--gold);background:#fff;border-radius:3px;overflow:hidden;min-height:120px;}
+.ig-reel-cell .instagram-media{margin:0 !important;min-width:0 !important;width:100% !important;border:0 !important;box-shadow:none !important;border-radius:0 !important;}
+.ig-follow{margin-top:42px;text-align:center;}
+@media(max-width:600px){.ig-photos{grid-template-columns:repeat(2,1fr);gap:8px;}.ig-section{padding:64px 0;}}
