@@ -346,3 +346,31 @@ section { padding: 100px 0; }
   .media-duo{grid-template-columns:1fr;}
   .media-duo .duo-cell{aspect-ratio:4/3;}
 }
+
+/* ===== Refined editorial media v2 (contained, artful) ===== */
+.ed-split{padding:108px 0;}
+.ed-split .ed-inner{display:grid;grid-template-columns:1fr 0.82fr;gap:64px;align-items:center;}
+.ed-split .ed-copy .eyebrow{margin-bottom:20px;}
+.ed-split .ed-copy h2{font-size:30px;font-weight:300;line-height:1.22;letter-spacing:.005em;color:var(--cream);}
+.ed-split .ed-copy h2 em{font-style:italic;color:var(--gold);}
+.ed-split .ed-copy p{color:var(--text-dim);font-size:15px;line-height:1.75;max-width:44ch;margin-top:20px;}
+.ed-split .ed-rule{width:54px;height:1px;background:var(--gold);margin-top:28px;}
+.ed-frame{position:relative;width:100%;}
+.ed-frame .ed-img{position:relative;z-index:1;aspect-ratio:4/5;background-size:cover;background-position:center;border:1px solid rgba(201,168,108,.55);filter:brightness(.97);}
+.ed-frame::after{content:"";position:absolute;z-index:0;left:18px;top:18px;right:-18px;bottom:-18px;border:1px solid var(--gold);opacity:.4;}
+.ed-strip{padding:0 0 108px;}
+.ed-strip .ed-head{text-align:center;margin-bottom:36px;}
+.ed-strip .ed-head h3{font-size:22px;font-weight:300;color:var(--cream);margin-top:10px;letter-spacing:.01em;}
+.ed-strip .ed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:980px;margin:0 auto;}
+.ed-strip .ed-cell{aspect-ratio:4/5;background-size:cover;background-position:center;border:1px solid var(--line);filter:brightness(.9) saturate(.95);transition:border-color .45s ease,transform .6s cubic-bezier(.2,.7,.2,1),filter .6s ease;}
+.ed-strip .ed-cell:hover{border-color:var(--gold);transform:translateY(-5px);filter:brightness(1.04) saturate(1.05);}
+@media(max-width:760px){
+  .ed-split{padding:64px 0;}
+  .ed-split .ed-inner{grid-template-columns:1fr;gap:34px;}
+  .ed-split .ed-copy h2{font-size:25px;}
+  .ed-frame{max-width:330px;}
+  .ed-frame::after{left:12px;top:12px;right:-12px;bottom:-12px;}
+  .ed-strip{padding:0 0 64px;}
+  .ed-strip .ed-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .ed-strip .ed-cell:last-child{grid-column:1 / -1;aspect-ratio:16/10;}
+}
