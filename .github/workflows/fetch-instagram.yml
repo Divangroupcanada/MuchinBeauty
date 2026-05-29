@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'scripts/ig-photos.json'
+      - 'scripts/ig-videos.json'
+      - 'scripts/ig-thumbs.json'
       - 'scripts/fetch-ig.mjs'
       - '.github/workflows/fetch-instagram.yml'
 permissions:
