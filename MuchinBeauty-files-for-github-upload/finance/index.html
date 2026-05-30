@@ -46,10 +46,9 @@
           <a href="/skintagremoval/">Skin Tag Removal</a>
         </div>
       </div>
+      <a href="/">Home</a>
       <a href="/aboutus/">About</a>
       <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
       <a href="/blog/">Blog</a>
       <a href="/finance/">Finance</a>
       <a href="/contact/">Contact</a>
@@ -75,10 +74,9 @@
     <a class="sub" href="/rmt/">Massage Therapy (RMT)</a>
     <a class="sub" href="/skintagremoval/">Skin Tag Removal</a>
   <div class="m-label">More</div>
+  <a href="/">Home</a>
   <a href="/aboutus/">About</a>
   <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
   <a href="/blog/">Blog</a>
   <a href="/finance/">Finance</a>
   <a href="/contact/">Contact</a>
@@ -96,20 +94,28 @@
 </section>
 <section class="page-body">
   <div class="container">
-    <p class="lead-line">Great skin is an investment — and we want it to fit your life. Muchin offers straightforward, flexible ways to pay, so you can focus on results instead of logistics.</p>
-    <div class="card-grid" style="margin-top:36px;">
-      <div class="info-card"><h3>Pay Your Way</h3><p>We accept all major credit and debit cards, plus contactless payment. Treatment packages can be paid per-session or upfront.</p></div>
-      <div class="info-card"><h3>Financing Available</h3><p>For larger treatment plans, financing options may be available to spread the cost into manageable monthly payments. Ask us during your consultation.</p></div>
-      <div class="info-card"><h3>Insurance &amp; Direct Billing</h3><p>Registered Massage Therapy (RMT) is eligible for insurance — we offer direct billing to most major providers, so you may pay little to nothing out of pocket.</p></div>
+    <p class="lead-line" style="margin-bottom:40px;">Investing in your skin should feel accessible. At Muchin we offer several ways to pay — clearly, with no surprises.</p>
+
+    <div class="card-grid">
+      <div class="info-card"><h3>All Major Cards</h3><p>We accept Visa, Mastercard, American Express and debit. Payments are processed securely at the clinic.</p></div>
+      <div class="info-card"><h3>Beautifi Financing</h3><p>Finance your treatment plan through Beautifi — Canada's leading medi-spa financing provider. Apply in minutes, with flexible monthly terms and approvals up to $15,000.<br><br><a class="inline" href="https://www.beautifi.com/" target="_blank" rel="noopener">Apply at Beautifi &rarr;</a></p></div>
+      <div class="info-card"><h3>Health Spending Accounts</h3><p>Many treatments at Muchin — including Registered Massage Therapy — may be eligible under your employer's Health Spending Account (HSA). Ask us for an itemized receipt.</p></div>
+      <div class="info-card"><h3>Direct Insurance Billing (RMT)</h3><p>Registered Massage Therapy is covered by most extended health benefit plans. We offer direct billing to your insurer — bring your policy details and we handle the paperwork on-site.</p></div>
+      <div class="info-card"><h3>Treatment Packages</h3><p>Ask about package pricing for laser hair removal, Hydrafacial and cosmetic injection series. Packages are paid upfront and offer better value per session.</p></div>
+      <div class="info-card"><h3>Free Consultation</h3><p>Every plan starts with a complimentary consultation. We walk you through the recommended treatments, total costs and the best payment path for your budget — no commitment required.</p></div>
     </div>
-    <h2>How it works</h2>
-    <p>Every plan starts with a <strong>complimentary consultation</strong>. We assess your skin and goals, recommend the right treatments, and walk you through pricing clearly — no pressure and no surprises. From there we'll map the most cost-effective path, whether that's a single treatment, a package, or a longer plan paid over time.</p>
-    <h2>RMT direct insurance billing</h2>
-    <p>If you have extended health benefits that cover Registered Massage Therapy, we can bill your insurer directly at the time of your appointment. Bring your insurance details to your first visit and we'll take care of the paperwork. Coverage varies by plan, so we'll always confirm what's eligible before you book.</p>
+
+    <h2>About Beautifi</h2>
+    <p>Beautifi is a Canadian financing platform built specifically for aesthetic treatments. Once approved, you choose a payment plan (typically 6, 12 or 24 months) and your treatment begins the same week. Beautifi works directly with Muchin — ask our team at your consultation to start your application. Approval takes minutes and there is no impact to your credit score to apply.</p>
+
+    <h2>RMT Insurance — how it works</h2>
+    <p>If your plan covers Registered Massage Therapy, you pay nothing (or just your co-pay) at the time of your appointment. Bring your insurance card and policy number. We submit the claim and the insurer pays us directly. If your plan requires a doctor's referral, ask your GP before booking. Coverage limits and eligible sessions vary by employer — check your plan details for specifics.</p>
+
     <h2>Questions about cost?</h2>
-    <p>We're happy to talk through pricing and payment before you commit to anything. Call us at <a class="inline" href="tel:9057800003">(905) 780-0003</a> or book a free consultation and we'll build a plan that works for your budget.</p>
+    <p>We'll never pressure you into a treatment you haven't budgeted for. Book a <a class="inline" href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" target="_blank" rel="noopener">free consultation</a> and we'll build a treatment plan that fits your goals and your timeline — financially and otherwise. Call us at <a class="inline" href="tel:9057800003">(905) 780-0003</a> if you have questions before you come in.</p>
   </div>
 </section>
+
 <section class="final-cta">
   <div class="container">
     <span class="eyebrow">Your Skin &middot; Your Story</span>
@@ -179,7 +185,7 @@ var hb=document.getElementById('hamburger'),mn=document.getElementById('mobileNa
 if(hb){hb.addEventListener('click',function(){mn.classList.toggle('open');document.body.classList.toggle('body-lock');});
 mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');document.body.classList.remove('body-lock');});});}
 var ls=0,h=document.getElementById('siteHeader');
-window.addEventListener('scroll',function(){var s=window.scrollY;if(s>200&&s>ls)h.classList.add('hide');else h.classList.remove('hide');ls=s;});
+window.addEventListener('scroll',function(){var s=window.scrollY;if(s>120)h.classList.add('floating');else h.classList.remove('floating');ls=s;});
 var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el);});
 document.querySelectorAll('.faq-item').forEach(function(it){var q=it.querySelector('.faq-q');if(q)q.addEventListener('click',function(){it.classList.toggle('open');});});

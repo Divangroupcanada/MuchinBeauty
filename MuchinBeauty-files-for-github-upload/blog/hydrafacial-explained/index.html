@@ -46,10 +46,9 @@
           <a href="/skintagremoval/">Skin Tag Removal</a>
         </div>
       </div>
+      <a href="/">Home</a>
       <a href="/aboutus/">About</a>
       <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
       <a href="/blog/">Blog</a>
       <a href="/finance/">Finance</a>
       <a href="/contact/">Contact</a>
@@ -75,10 +74,9 @@
     <a class="sub" href="/rmt/">Massage Therapy (RMT)</a>
     <a class="sub" href="/skintagremoval/">Skin Tag Removal</a>
   <div class="m-label">More</div>
+  <a href="/">Home</a>
   <a href="/aboutus/">About</a>
   <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
   <a href="/blog/">Blog</a>
   <a href="/finance/">Finance</a>
   <a href="/contact/">Contact</a>
@@ -108,6 +106,26 @@
     <p style="margin-top:30px;">Ready to book? Explore <a class="inline" href="/hydrafacial/">Hydrafacial</a> or <a class="inline" href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/">book a free consultation</a> and we'll tailor it to you.</p>
   </div>
 </article>
+<section style="padding:0 0 80px;background:var(--bg)">
+  <div class="container">
+    <div class="ed-video">
+      <div class="ed-head"><span class="eyebrow">Watch the Treatment</span>
+      <h3>Hydrafacial — in the clinic</h3></div>
+      <div class="ed-videos"><div class="ed-vid"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18150195139423773.jpg"><source src="/ig/vid/18150195139423773.mp4" type="video/mp4"></video></div></div>
+    </div>
+    <div class="ed-strip">
+      <div class="ed-head"><span class="eyebrow">Results</span><h3>Before &amp; After</h3></div>
+      <div class="ba-grid">
+        <div class="cell"><img loading="lazy" src="/ig/18139958683505678.jpg" alt="Hydrafacial result"></div>
+        <div class="cell"><img loading="lazy" src="/ig/18099274772471204.jpg" alt="Hydrafacial result"></div>
+        <div class="cell"><img loading="lazy" src="/ig/18088065893238600.jpg" alt="Hydrafacial result"></div>
+        <div class="cell"><img loading="lazy" src="/ig/18056438246465229.jpg" alt="Hydrafacial result"></div>
+        <div class="cell"><img loading="lazy" src="/ig/18136081516398593.jpg" alt="Hydrafacial result"></div>
+        <div class="cell"><img loading="lazy" src="/ig/18082666861903760.jpg" alt="Hydrafacial result"></div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="final-cta">
   <div class="container">
     <span class="eyebrow">Your Skin &middot; Your Story</span>
@@ -177,7 +195,7 @@ var hb=document.getElementById('hamburger'),mn=document.getElementById('mobileNa
 if(hb){hb.addEventListener('click',function(){mn.classList.toggle('open');document.body.classList.toggle('body-lock');});
 mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');document.body.classList.remove('body-lock');});});}
 var ls=0,h=document.getElementById('siteHeader');
-window.addEventListener('scroll',function(){var s=window.scrollY;if(s>200&&s>ls)h.classList.add('hide');else h.classList.remove('hide');ls=s;});
+window.addEventListener('scroll',function(){var s=window.scrollY;if(s>120)h.classList.add('floating');else h.classList.remove('floating');ls=s;});
 var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el);});
 document.querySelectorAll('.faq-item').forEach(function(it){var q=it.querySelector('.faq-q');if(q)q.addEventListener('click',function(){it.classList.toggle('open');});});

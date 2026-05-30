@@ -48,10 +48,9 @@
           <a href="/skintagremoval/">Skin Tag Removal</a>
         </div>
       </div>
+      <a href="/">Home</a>
       <a href="/aboutus/">About</a>
       <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
       <a href="/blog/">Blog</a>
       <a href="/finance/">Finance</a>
       <a href="/contact/">Contact</a>
@@ -77,10 +76,9 @@
     <a class="sub" href="/rmt/">Massage Therapy (RMT)</a>
     <a class="sub" href="/skintagremoval/">Skin Tag Removal</a>
   <div class="m-label">More</div>
+  <a href="/">Home</a>
   <a href="/aboutus/">About</a>
   <a href="/gallery/">Gallery</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/how-to/">How-To</a>
   <a href="/blog/">Blog</a>
   <a href="/finance/">Finance</a>
   <a href="/contact/">Contact</a>
@@ -88,6 +86,7 @@
 </div>
 
 <section class="svc-hero" style="--x:0;">
+  <video class="svc-hero-bg" autoplay muted loop playsinline preload="auto" poster="https://static.wixstatic.com/media/a90073_36043a3b887c40478dd0ccd1e1c06aeb~mv2.webp/v1/fill/w_1800,h_1100,al_c,q_88/img.jpg"><source src="/ig/vid/18076157363222852.mp4" type="video/mp4"></video>
   <style>.svc-hero::before{background-image:url('https://static.wixstatic.com/media/a90073_36043a3b887c40478dd0ccd1e1c06aeb~mv2.webp/v1/fill/w_1800,h_1100,al_c,q_88/img.jpg');}</style>
   <div class="container">
     <div class="breadcrumb"><a href="/">Home</a><span>/</span>Body Contouring</div>
@@ -287,7 +286,7 @@ var hb=document.getElementById('hamburger'),mn=document.getElementById('mobileNa
 if(hb){hb.addEventListener('click',function(){mn.classList.toggle('open');document.body.classList.toggle('body-lock');});
 mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');document.body.classList.remove('body-lock');});});}
 var ls=0,h=document.getElementById('siteHeader');
-window.addEventListener('scroll',function(){var s=window.scrollY;if(s>200&&s>ls)h.classList.add('hide');else h.classList.remove('hide');ls=s;});
+window.addEventListener('scroll',function(){var s=window.scrollY;if(s>120)h.classList.add('floating');else h.classList.remove('floating');ls=s;});
 var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el);});
 document.querySelectorAll('.faq-item').forEach(function(it){var q=it.querySelector('.faq-q');if(q)q.addEventListener('click',function(){it.classList.toggle('open');});});
