@@ -570,3 +570,32 @@ border:1px solid var(--line);background:var(--bg-2,#141414);padding:16px;}
 .testi-grid img:hover{border-color:var(--gold);transform:scale(1.025);}
 .testi-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 @media(max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr);}}
+
+
+/* ===== Fix: hero overlays lighter so video is clearly visible ===== */
+/* Home hero — much lighter top/mid, kept dark only at bottom for text */
+.hero::after{
+  background:linear-gradient(180deg,
+    rgba(10,10,10,.12) 0%,
+    rgba(10,10,10,.08) 40%,
+    rgba(10,10,10,.80) 100%) !important;
+}
+.hero .hero-bg{ opacity:.80 !important; filter:grayscale(0) brightness(.7) !important; }
+
+/* Service page hero — lighter top so video treatment shows clearly */
+.svc-hero::after{
+  background:linear-gradient(180deg,
+    rgba(10,10,10,.18) 0%,
+    rgba(10,10,10,.12) 40%,
+    rgba(10,10,10,.90) 100%) !important;
+}
+.svc-hero .svc-hero-bg{ opacity:.62 !important; filter:grayscale(0) brightness(.65) !important; }
+
+/* Before/After grid — taller cells so portrait IG photos show more content */
+.ba-grid{ grid-template-columns:repeat(3,1fr); gap:12px; }
+.ba-grid .cell{ aspect-ratio:3/4 !important; overflow:hidden; }
+.ba-grid .cell img{ object-fit:cover; object-position:center top; width:100%; height:100%; }
+@media(max-width:760px){
+  .ba-grid{ grid-template-columns:repeat(2,1fr); }
+  .ba-grid .cell:last-child:nth-child(odd){ grid-column:1/-1; aspect-ratio:16/9 !important; }
+}
