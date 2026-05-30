@@ -387,3 +387,42 @@ section { padding: 100px 0; }
   .ed-videos{gap:12px;}
   .ed-vid{width:44%;max-width:44%;}
 }
+
+
+/* ===== Hero treatment video ===== */
+.ed-hero-video{padding:52px 0 6px;}
+.ed-hero-video .ed-head{text-align:center;margin-bottom:22px;}
+.ed-hero-video .ed-head h3{font-size:21px;font-weight:300;color:var(--cream);margin-top:9px;letter-spacing:.01em;}
+.hero-reel-wrap{display:flex;justify-content:center;}
+.hero-reel{width:330px;max-width:78vw;aspect-ratio:9/16;border:1px solid rgba(201,168,108,.6);
+overflow:hidden;background:#000;box-shadow:0 18px 64px rgba(0,0,0,.55);}
+.hero-reel video{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* ===== Before & After results ===== */
+.ed-results{padding:40px 0 92px;}
+.ed-results .ed-head{text-align:center;margin-bottom:30px;}
+.ed-results .ed-head h3{font-size:22px;font-weight:300;color:var(--cream);margin-top:9px;letter-spacing:.01em;}
+.ba-reels{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;}
+.ba-reel{width:300px;max-width:80vw;aspect-ratio:9/16;border:1px solid rgba(201,168,108,.55);
+overflow:hidden;background:#000;box-shadow:0 12px 44px rgba(0,0,0,.42);}
+.ba-reel video{width:100%;height:100%;object-fit:cover;display:block;}
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.ba-grid .cell{position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid var(--line);background:#0c0c0c;}
+.ba-grid .cell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
+.ba-grid .cell:hover img{transform:scale(1.05);}
+
+/* ===== Good to know ===== */
+.ed-goodtoknow{padding:0 0 92px;}
+.ed-goodtoknow .ed-head{text-align:center;margin-bottom:20px;}
+.gtk{max-width:580px;margin:0 auto;display:flex;gap:18px;align-items:center;
+border:1px solid var(--line);background:var(--bg-2,#141414);padding:16px;}
+.gtk-img{flex:0 0 116px;aspect-ratio:1/1;overflow:hidden;border:1px solid rgba(201,168,108,.4);}
+.gtk-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.gtk-txt p{font-size:12.5px;color:var(--text-dim,#B8B0A3);line-height:1.55;margin:0;}
+@media(max-width:760px){
+  .ed-results{padding:30px 0 60px;}
+  .ba-grid{grid-template-columns:repeat(2,1fr);}
+  .ba-reel{width:46%;max-width:46%;}
+  .gtk{flex-direction:row;}
+  .gtk-img{flex:0 0 88px;}
+}

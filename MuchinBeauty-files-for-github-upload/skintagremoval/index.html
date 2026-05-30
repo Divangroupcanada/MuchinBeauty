@@ -95,6 +95,13 @@
   </div>
 </section>
 
+<section class="ed-hero-video reveal">
+  <div class="container">
+    <div class="ed-head"><span class="eyebrow">Watch</span><h3>Skin Tag Removal in motion</h3></div>
+    <div class="hero-reel-wrap"><div class="hero-reel"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18306041335085882.jpg"><source src="/ig/vid/18306041335085882.mp4" type="video/mp4"></video></div></div>
+  </div>
+</section>
+
 <div class="trust-strip">
   <div class="container">
     <div class="trust-item"><span class="num">20+</span><span class="label">Years of Expertise</span></div>
@@ -146,25 +153,6 @@
 </div>
 
 
-<section class="ed-split reveal">
-  <div class="container">
-    <div class="ed-inner">
-      <div class="ed-copy">
-        <span class="eyebrow">Clear & Confident</span>
-        <h2>Smooth skin,<br><em>safely restored.</em></h2>
-        <p>Professional removal of skin tags and minor lesions — precise, hygienic and quick.</p>
-        <div class="ed-rule"></div>
-      </div>
-      <div class="ed-frame"><div class="ed-img" style="background-image:url('/ig/18043369384635655.jpg');"></div></div>
-    </div>
-  </div>
-</section>
-<section class="ed-video reveal">
-  <div class="container">
-    <div class="ed-head"><span class="eyebrow">In Motion</span><h3>Skin tag removal, up close</h3></div>
-    <div class="ed-videos"><div class="ed-vid"><video src="/ig/vid/18306041335085882.mp4" poster="/ig/18306041335085882.jpg" muted autoplay loop playsinline preload="metadata"></video></div></div>
-  </div>
-</section>
 
 <section class="faq" style="background:var(--bg-2);">
   <div class="container">
@@ -194,6 +182,15 @@
     </div>
   </div>
 </section>
+
+<section class="ed-results reveal">
+  <div class="container">
+    <div class="ed-head"><span class="eyebrow">Real Results</span><h3>Before &amp; After</h3></div>
+    
+    <div class="ba-grid"><div class="cell"><img loading="lazy" decoding="async" src="/ig/18043369384635655.jpg" alt="Before and after result"></div></div>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <span class="eyebrow">Your Skin · Your Story</span>
@@ -270,5 +267,6 @@ var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
 if(vw){vw.addEventListener('click',function(){var w=document.querySelector('.video-band');if(w.classList.contains('playing'))return;var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/g8S6rwrlVSs?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;vw.appendChild(f);w.classList.add('playing');});}
 </script>
+<script src="/lazyplay.js" defer></script>
 </body>
 </html>

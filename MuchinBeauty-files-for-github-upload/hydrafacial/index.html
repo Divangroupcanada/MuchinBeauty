@@ -95,6 +95,13 @@
   </div>
 </section>
 
+<section class="ed-hero-video reveal">
+  <div class="container">
+    <div class="ed-head"><span class="eyebrow">Watch</span><h3>Hydrafacial in motion</h3></div>
+    <div class="hero-reel-wrap"><div class="hero-reel"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18150195139423773.jpg"><source src="/ig/vid/18150195139423773.mp4" type="video/mp4"></video></div></div>
+  </div>
+</section>
+
 <div class="trust-strip">
   <div class="container">
     <div class="trust-item"><span class="num">20+</span><span class="label">Years of Expertise</span></div>
@@ -146,23 +153,12 @@
 </div>
 
 
-<section class="ed-split reveal">
-  <div class="container">
-    <div class="ed-inner">
-      <div class="ed-copy">
-        <span class="eyebrow">Skin, Reimagined</span>
-        <h2>A glow you can<br><em>see and feel.</em></h2>
-        <p>Deep-cleansing, hydrating and resurfacing in one gentle treatment — no downtime, just immediate radiance.</p>
-        <div class="ed-rule"></div>
-      </div>
-      <div class="ed-frame"><div class="ed-img" style="background-image:url('/ig/17979777047844023.jpg');"></div></div>
-    </div>
-  </div>
-</section>
+
+
 <section class="ed-video reveal">
   <div class="container">
-    <div class="ed-head"><span class="eyebrow">In Motion</span><h3>Hydrafacial, up close</h3></div>
-    <div class="ed-videos"><div class="ed-vid"><video src="/ig/vid/18161731393343418.mp4" poster="/ig/18161731393343418.jpg" muted autoplay loop playsinline preload="metadata"></video></div></div>
+    <div class="ed-head"><span class="eyebrow">In Motion</span><h3>Up close</h3></div>
+    <div class="ed-videos"><div class="ed-vid"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18161731393343418.jpg"><source src="/ig/vid/18161731393343418.mp4" type="video/mp4"></video></div><div class="ed-vid"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18016749218523378.jpg"><source src="/ig/vid/18016749218523378.mp4" type="video/mp4"></video></div></div>
   </div>
 </section>
 
@@ -196,10 +192,11 @@
 </section>
 
 
-<section class="ed-strip reveal">
+<section class="ed-results reveal">
   <div class="container">
-    <div class="ed-head"><span class="eyebrow">Inside the Clinic</span><h3>Moments from the studio</h3></div>
-    <div class="ed-grid"><div class="ed-cell" style="background-image:url('/ig/18099274772471204.jpg');"></div><div class="ed-cell" style="background-image:url('/ig/18139958683505678.jpg');"></div><div class="ed-cell" style="background-image:url('/ig/18088065893238600.jpg');"></div></div>
+    <div class="ed-head"><span class="eyebrow">Real Results</span><h3>Before &amp; After</h3></div>
+    
+    <div class="ba-grid"><div class="cell"><img loading="lazy" decoding="async" src="/ig/18139958683505678.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18099274772471204.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18088065893238600.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18056438246465229.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18136081516398593.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18082666861903760.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/17965686425557115.jpg" alt="Before and after result"></div></div>
   </div>
 </section>
 
@@ -279,5 +276,6 @@ var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
 if(vw){vw.addEventListener('click',function(){var w=document.querySelector('.video-band');if(w.classList.contains('playing'))return;var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/g8S6rwrlVSs?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;vw.appendChild(f);w.classList.add('playing');});}
 </script>
+<script src="/lazyplay.js" defer></script>
 </body>
 </html>

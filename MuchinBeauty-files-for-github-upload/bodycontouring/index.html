@@ -95,6 +95,13 @@
   </div>
 </section>
 
+<section class="ed-hero-video reveal">
+  <div class="container">
+    <div class="ed-head"><span class="eyebrow">Watch</span><h3>Body Contouring in motion</h3></div>
+    <div class="hero-reel-wrap"><div class="hero-reel"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18076157363222852.jpg"><source src="/ig/vid/18076157363222852.mp4" type="video/mp4"></video></div></div>
+  </div>
+</section>
+
 <div class="trust-strip">
   <div class="container">
     <div class="trust-item"><span class="num">20+</span><span class="label">Years of Expertise</span></div>
@@ -147,23 +154,12 @@
 </div>
 
 
-<section class="ed-split reveal">
-  <div class="container">
-    <div class="ed-inner">
-      <div class="ed-copy">
-        <span class="eyebrow">Sculpt & Define</span>
-        <h2>Refined contours,<br><em>non-invasively.</em></h2>
-        <p>Targeted body treatments that smooth, firm and shape — no surgery, and no downtime.</p>
-        <div class="ed-rule"></div>
-      </div>
-      <div class="ed-frame"><div class="ed-img" style="background-image:url('/ig/17936314599253859.jpg');"></div></div>
-    </div>
-  </div>
-</section>
+
+
 <section class="ed-video reveal">
   <div class="container">
-    <div class="ed-head"><span class="eyebrow">In Motion</span><h3>Body contouring, up close</h3></div>
-    <div class="ed-videos"><div class="ed-vid"><video src="/ig/vid/18076157363222852.mp4" poster="/ig/18076157363222852.jpg" muted autoplay loop playsinline preload="metadata"></video></div></div>
+    <div class="ed-head"><span class="eyebrow">In Motion</span><h3>Up close</h3></div>
+    <div class="ed-videos"><div class="ed-vid"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/18037720451758530.jpg"><source src="/ig/vid/18037720451758530.mp4" type="video/mp4"></video></div><div class="ed-vid"><video data-lazy muted loop playsinline preload="metadata" poster="/ig/17968510250886308.jpg"><source src="/ig/vid/17968510250886308.mp4" type="video/mp4"></video></div></div>
   </div>
 </section>
 
@@ -197,10 +193,22 @@
 </section>
 
 
-<section class="ed-strip reveal">
+<section class="ed-results reveal">
   <div class="container">
-    <div class="ed-head"><span class="eyebrow">Inside the Clinic</span><h3>Moments from the studio</h3></div>
-    <div class="ed-grid"><div class="ed-cell" style="background-image:url('/ig/18094809071170641.jpg');"></div><div class="ed-cell" style="background-image:url('/ig/17864111277533582.jpg');"></div><div class="ed-cell" style="background-image:url('/ig/18142888378461917.jpg');"></div></div>
+    <div class="ed-head"><span class="eyebrow">Real Results</span><h3>Before &amp; After</h3></div>
+    
+    <div class="ba-grid"><div class="cell"><img loading="lazy" decoding="async" src="/ig/18142888378461917.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18304810366250888.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18541565632027234.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18132818263438507.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/18046734922858596.jpg" alt="Before and after result"></div><div class="cell"><img loading="lazy" decoding="async" src="/ig/17941247117966727.jpg" alt="Before and after result"></div></div>
+  </div>
+</section>
+
+
+<section class="ed-goodtoknow reveal">
+  <div class="container">
+    <div class="ed-head"><span class="eyebrow">Good to Know</span></div>
+    <div class="gtk">
+      <div class="gtk-img"><img loading="lazy" decoding="async" src="/ig/18061359350532933.jpg" alt="Informative"></div>
+      <div class="gtk-txt"><p>💚 Introducing the Emerald™ Laser at Muchin Beauty! 💚  Say hello to the latest in non-invasive fat reduction and body contouring technology. The Emerald™ Laser delivers clinically…</p></div>
+    </div>
   </div>
 </section>
 
@@ -280,5 +288,6 @@ var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
 if(vw){vw.addEventListener('click',function(){var w=document.querySelector('.video-band');if(w.classList.contains('playing'))return;var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/g8S6rwrlVSs?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;vw.appendChild(f);w.classList.add('playing');});}
 </script>
+<script src="/lazyplay.js" defer></script>
 </body>
 </html>
