@@ -29,7 +29,6 @@
   <div class="container">
     <a href="/" class="brand"><img src="https://static.wixstatic.com/media/a90073_0776a236338d4b198ba0c8a907fef11d~mv2.png/v1/fill/w_300,h_345,al_c,q_85/logo.png" alt="Muchin Beauty Clinic"></a>
     <nav class="nav-main">
-      <a href="/aboutus/">About</a>
       <div class="has-dropdown">
         <a href="/#services">Services <span style="color:var(--gold);font-size:10px;">▾</span></a>
         <div class="dropdown">
@@ -49,8 +48,10 @@
       </div>
       <a href="/aboutus/">About</a>
       <a href="/gallery/">Gallery</a>
-      <a href="https://www.muchin.ca/blog-m">Blog</a>
-      <a href="https://www.muchin.ca/finance">Finance</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/how-to/">How-To</a>
+      <a href="/blog/">Blog</a>
+      <a href="/finance/">Finance</a>
       <a href="/contact/">Contact</a>
       <a href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" class="cta-pill" target="_blank" rel="noopener">Free Consult</a>
     </nav>
@@ -76,13 +77,16 @@
   <div class="m-label">More</div>
   <a href="/aboutus/">About</a>
   <a href="/gallery/">Gallery</a>
-  <a href="https://www.muchin.ca/blog-m">Blog</a>
-  <a href="https://www.muchin.ca/finance">Finance</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/how-to/">How-To</a>
+  <a href="/blog/">Blog</a>
+  <a href="/finance/">Finance</a>
   <a href="/contact/">Contact</a>
   <a href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" class="m-cta" target="_blank" rel="noopener">Book Free Consultation</a>
 </div>
 
 <section class="hero">
+  <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="https://static.wixstatic.com/media/11062b_9314ed5b02ec4c47935b4d8a62a7745ef000.jpg/v1/fill/w_2000,h_1200,al_c,q_88/img.jpg"><source src="/ig/vid/18057617297134937.mp4" type="video/mp4"></video>
   <style>.hero::before{background-image:url('https://static.wixstatic.com/media/11062b_9314ed5b02ec4c47935b4d8a62a7745ef000.jpg/v1/fill/w_2000,h_1200,al_c,q_88/img.jpg');}</style>
   <div class="container">
     <div class="hero-content">
@@ -92,7 +96,7 @@
       <p class="mission">To provide advanced skincare backed by science.</p>
       <div class="hero-ctas">
         <a href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" class="btn-primary" target="_blank" rel="noopener">Book Free Consultation</a>
-        <a href="#video" class="btn-secondary">Watch the Tour</a>
+        <a href="#services" class="btn-secondary">Explore Treatments</a>
       </div>
     </div>
   </div>
@@ -107,17 +111,6 @@
   </div>
 </div>
 
-<section class="video-band" id="video">
-  <div class="video-wrap" id="videoWrap">
-    <div class="thumb" style="background-image:url('https://i.ytimg.com/vi/g8S6rwrlVSs/maxresdefault.jpg');"></div>
-    <div class="overlay">
-      <div class="play-btn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg></div>
-      <div class="video-title">Take a <em>tour</em> of Muchin Beauty Clinic.</div>
-      <div class="video-sub">Richmond Hill · Walkthrough</div>
-    </div>
-  </div>
-</section>
-
 <section id="services">
   <div class="container">
     <div class="section-header reveal">
@@ -127,81 +120,56 @@
     </div>
   </div>
   <div class="services-grid">
-    <a href="/cosmeticinjection/" class="service-card">
+    <a href="/cosmeticinjection/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/11062b_7a4dfef81d4f4e1683b5c5c068fc89ea~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">01 / Injectables</div><h3>Cosmetic Injection</h3><p class="desc">Botox, Dermal Fillers, Skin Booster, PRP, Mesotherapy, Vampire Facial, B12 & PCDC Lipodissolve.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/hydrafacial/" class="service-card">
+    <a href="/hydrafacial/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_6212ce6798d541d0a0c18bf9bfb5b26e~mv2.webp/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">02 / Skin</div><h3>Hydrafacial™</h3><p class="desc">Patented vortex technology — cleanse, extract, hydrate. Platinum, Deluxe & Signature tiers.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/laserhairremoval/" class="service-card">
+    <a href="/laserhairremoval/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/11062b_1bf08deba22a4736a516f976e4202fa4~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">03 / Laser</div><h3>Laser Hair Removal</h3><p class="desc">Permanent hair reduction at the root. Face & body, sessions every 6–8 weeks.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/permanentmakeup/" class="service-card">
+    <a href="/permanentmakeup/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_1618950c335b48e69559e43abf2ab41b~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">04 / Aesthetic</div><h3>Permanent Makeup</h3><p class="desc">Eyebrow Microblading, Lip Shading & Eyeliner. Wake up beautiful.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/iplrftreatments/" class="service-card">
+    <a href="/iplrftreatments/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_cf530dfc6a844cf9804687422268d6e0~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">05 / Skin Tech</div><h3>IPL & RF Treatments</h3><p class="desc">Photofacial, RF Skin Tightening, TRIBELLA & RF Microneedling. Venus Versa MP².</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/facial/" class="service-card">
+    <a href="/facial/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/11062b_30c155ee90604b36b612362556843140~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">06 / Skin</div><h3>Facial</h3><p class="desc">12 custom treatments — Microneedling, Dermaplaning, Signature, LED, Acne & more.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/japanese-head-spa/" class="service-card">
+    <a href="/japanese-head-spa/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/6a1327_fad06c90bba74cc7bd57f1b631063787~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">07 / Wellness</div><h3>Japanese Head Spa</h3><p class="desc">Authentic ritual. Deep Cleansing, Scalp Massage, Nourishing or Complete (90 min).</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/bodycontouring/" class="service-card">
+    <a href="/bodycontouring/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_36043a3b887c40478dd0ccd1e1c06aeb~mv2.webp/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">08 / Body</div><h3>Body Contouring</h3><p class="desc">Non-surgical slimming. Tighten skin & target stubborn areas with no downtime.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/vitamintherapy/" class="service-card">
+    <a href="/vitamintherapy/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_ab3d579b9edd4e53865dfa2e9bcde600~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">09 / Wellness</div><h3>Vitamin Therapy</h3><p class="desc">IV drips & booster shots for energy, immunity, wellness & glow.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/rmt/" class="service-card">
+    <a href="/rmt/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/11062b_701ecff590564465a24fc9c5f63f848a~mv2.jpeg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">10 / Wellness</div><h3>Massage Therapy (RMT)</h3><p class="desc">Swedish, deep tissue, sports & lymphatic massage. Direct insurance billing available.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
-    <a href="/skintagremoval/" class="service-card">
+    <a href="/skintagremoval/" class="service-card reveal">
       <div class="card-img" style="background-image:url('https://static.wixstatic.com/media/a90073_9557b3719c87430a94b9f0f54e1be081~mv2.jpg/v1/fill/w_800,h_500,al_c,q_88/img.jpg');"></div>
       <div class="card-body"><div><div class="num">11 / Medical</div><h3>Skin Tag Removal</h3><p class="desc">JetPen high-frequency removal. Minimal scarring. Health Canada approved.</p></div><span class="arrow">View Treatment →</span></div>
     </a>
   </div>
 </section>
 
-<section class="gallery-section" id="gallery">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="eyebrow">Step Inside</span>
-      <h2>Inside <span class="accent">Muchin.</span></h2>
-      <p>A look at our boutique Richmond Hill clinic — treatment rooms, technology, results &amp; the team behind every appointment.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item tall" style="background-image:url('https://static.wixstatic.com/media/a90073_f978bad529054375af56ca21ff32ea6e~mv2.jpg/v1/fit/w_900,h_900,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_32da09f64982417d9c6b9838c420d8ec~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_980ec5406b4b4298bf40ca5cd43fbc5e~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item tall" style="background-image:url('https://static.wixstatic.com/media/a90073_62d0202f369348a482d8e5579001103a~mv2.jpg/v1/fit/w_900,h_900,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item wide" style="background-image:url('https://static.wixstatic.com/media/a90073_54da8f377c98488f8b9295dba8a4e980~mv2.jpg/v1/fit/w_1200,h_600,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_bd60840b555d4b1b9a0de7e5a8ce3a0a~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_241ab6cf4b434d6f9bd5d9a3edfcda66~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_f4eb2b3e59764c378ad58452edac1eea~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_034637cee41e4e03b99f595bd940277d~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_d9859d0777a5418dacdd3b7425048480~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_207a48045d1648318823d6b834779aea~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-      <div class="gallery-item" style="background-image:url('https://static.wixstatic.com/media/a90073_ae5e64cdc1d7474c845745810fe79253~mv2.jpg/v1/fit/w_700,h_500,al_c,q_88/img.jpg');"></div>
-    </div>
-    <div class="gallery-cta"><a href="/gallery/" class="btn-secondary">View Full Gallery →</a></div>
-  </div>
-</section>
-
 <section class="featured-split">
   <div class="split-row">
-    <div class="split-img" style="background-image:url('https://static.wixstatic.com/media/11062b_7a4dfef81d4f4e1683b5c5c068fc89ea~mv2.jpg/v1/fill/w_1400,h_900,al_c,q_88/img.jpg');"></div>
+    <div class="split-img split-video"><video data-lazy muted loop playsinline preload="metadata" poster="https://static.wixstatic.com/media/11062b_7a4dfef81d4f4e1683b5c5c068fc89ea~mv2.jpg/v1/fill/w_1400,h_900,al_c,q_88/img.jpg"><source src="/ig/vid/18319317142214001.mp4" type="video/mp4"></video></div>
     <div class="split-content">
       <span class="eyebrow">Cosmetic Injection · Most Requested</span>
       <h2>Botox &amp; <span class="accent">Fillers.</span></h2>
@@ -211,7 +179,7 @@
     </div>
   </div>
   <div class="split-row">
-    <div class="split-img" style="background-image:url('https://static.wixstatic.com/media/6a1327_fad06c90bba74cc7bd57f1b631063787~mv2.jpg/v1/fill/w_1400,h_900,al_c,q_88/img.jpg');"></div>
+    <div class="split-img split-video"><video data-lazy muted loop playsinline preload="metadata" poster="https://static.wixstatic.com/media/6a1327_fad06c90bba74cc7bd57f1b631063787~mv2.jpg/v1/fill/w_1400,h_900,al_c,q_88/img.jpg"><source src="/ig/vid/17943052641131186.mp4" type="video/mp4"></video></div>
     <div class="split-content">
       <span class="eyebrow">New &amp; Exclusive</span>
       <h2>Japanese <span class="accent">Head Spa.</span></h2>
@@ -221,7 +189,7 @@
     </div>
   </div>
   <div class="split-row">
-    <div class="split-img" style="background-image:url('https://static.wixstatic.com/media/a90073_6212ce6798d541d0a0c18bf9bfb5b26e~mv2.webp/v1/fill/w_1400,h_900,al_c,q_88/img.jpg');"></div>
+    <div class="split-img split-video"><video data-lazy muted loop playsinline preload="metadata" poster="https://static.wixstatic.com/media/a90073_6212ce6798d541d0a0c18bf9bfb5b26e~mv2.webp/v1/fill/w_1400,h_900,al_c,q_88/img.jpg"><source src="/ig/vid/18150195139423773.mp4" type="video/mp4"></video></div>
     <div class="split-content">
       <span class="eyebrow">Signature Facial</span>
       <h2>The <span class="accent">Hydrafacial™.</span></h2>
@@ -280,6 +248,15 @@
   </div>
 </section>
 
+<section class="home-tour">
+  <video data-lazy muted loop playsinline preload="metadata" poster="https://static.wixstatic.com/media/11062b_9314ed5b02ec4c47935b4d8a62a7745ef000.jpg/v1/fill/w_2000,h_1200,al_c,q_88/img.jpg"><source src="/ig/vid/17860521810038731.mp4" type="video/mp4"></video>
+  <div class="ht-overlay">
+    <span class="eyebrow">Step Inside</span>
+    <h2>A space designed <span class="accent">around you.</span></h2>
+    <a href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" class="btn-primary" target="_blank" rel="noopener">Book Your Visit</a>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <span class="eyebrow">Your Skin · Your Story</span>
@@ -322,9 +299,11 @@
         <h5>Clinic</h5>
         <ul>
           <li><a href="/aboutus/">About Muchin</a></li>
-          <li><a href="https://www.muchin.ca/finance" target="_blank" rel="noopener">Financing</a></li>
+          <li><a href="/finance/">Financing</a></li>
           <li><a href="/gallery/">Gallery</a></li>
-          <li><a href="https://www.muchin.ca/blog-m" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="/reviews/">Reviews</a></li>
+          <li><a href="/how-to/">How-To</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="https://muchinbeauty.simplybook.me/v2/#book/category/8/count/1/" target="_blank" rel="noopener">Book Online</a></li>
         </ul>
@@ -356,5 +335,6 @@ var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
 if(vw){vw.addEventListener('click',function(){var w=document.querySelector('.video-band');if(w.classList.contains('playing'))return;var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/g8S6rwrlVSs?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;vw.appendChild(f);w.classList.add('playing');});}
 </script>
+<script src="/lazyplay.js" defer></script>
 </body>
 </html>
