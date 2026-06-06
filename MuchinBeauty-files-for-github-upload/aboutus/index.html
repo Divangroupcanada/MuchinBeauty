@@ -84,7 +84,8 @@
 </div>
 
 <section class="svc-hero">
-  <style>.svc-hero::before{background-image:url('https://static.wixstatic.com/media/a90073_7cdf898fe05846068c87f1d9f309d686~mv2.jpg/v1/fill/w_1800,h_1100,al_c,q_88/img.jpg');}</style>
+  <video class="svc-hero-bg" autoplay muted loop playsinline preload="auto" poster="https://static.wixstatic.com/media/11062b_9314ed5b02ec4c47935b4d8a62a7745ef000.jpg/v1/fill/w_2000,h_1200,al_c,q_88/img.jpg"><source src="/ig/vid/18057617297134937.mp4" type="video/mp4"></video>
+  <style>.svc-hero::before{background-image:url('https://static.wixstatic.com/media/11062b_9314ed5b02ec4c47935b4d8a62a7745ef000.jpg/v1/fill/w_2000,h_1200,al_c,q_88/img.jpg');}</style>
   <div class="container">
     <div class="breadcrumb"><a href="/">Home</a><span>/</span>About Us</div>
     <h1>About <span class="accent">Muchin.</span></h1>
@@ -124,9 +125,9 @@
 </section>
 
 <section class="video-band" id="video">
-  <div class="video-wrap" id="videoWrap">
-    <div class="thumb" style="background-image:url('https://i.ytimg.com/vi/g8S6rwrlVSs/maxresdefault.jpg');"></div>
-    <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="video-title">Take a <em>tour</em> of our clinic.</div><div class="video-sub">Richmond Hill</div></div>
+  <div class="video-wrap" id="videoWrap" style="position:relative;overflow:hidden;">
+    <video class="about-tour-vid" autoplay muted loop playsinline preload="metadata" poster="/ig/17860521810038731.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"><source src="/ig/vid/17860521810038731.mp4" type="video/mp4"></video>
+    <div class="overlay" style="pointer-events:none;position:relative;z-index:1;"><div class="video-title">Take a <em>tour</em> of our clinic.</div><div class="video-sub">Richmond Hill</div></div>
   </div>
 </section>
 
@@ -204,7 +205,7 @@ document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el);});
 document.querySelectorAll('.faq-item').forEach(function(it){var q=it.querySelector('.faq-q');if(q)q.addEventListener('click',function(){it.classList.toggle('open');});});
 var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
-if(vw){vw.addEventListener('click',function(){var w=document.querySelector('.video-band');if(w.classList.contains('playing'))return;var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/g8S6rwrlVSs?autoplay=1&rel=0&modestbranding=1';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;vw.appendChild(f);w.classList.add('playing');});}
+/* clinic tour video now autoplays inline */
 </script>
 </body>
 </html>
