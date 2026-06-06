@@ -117,15 +117,19 @@
       <p>Eleven medical-grade services, designed and delivered by our experienced doctors, registered nurses and beauty consultants.</p>
     </div>
   </div>
-  <div class="svc-cats reveal">
-    <button class="cat-pill active" data-filter="all">All</button>
-    <button class="cat-pill" data-filter="injectables">Injectables</button>
-    <button class="cat-pill" data-filter="skin">Skin &amp; Face</button>
-    <button class="cat-pill" data-filter="laser">Laser</button>
-    <button class="cat-pill" data-filter="body">Body</button>
-    <button class="cat-pill" data-filter="wellness">Wellness</button>
-    <button class="cat-pill" data-filter="aesthetic">Aesthetic</button>
+  <div class="container">
+    <div class="cat-browse-eyebrow reveal">Browse by category</div>
+    <div class="cat-cards reveal">
+      <button class="cat-card cat-all is-active" data-filter="all"><span class="cat-card-label">All Treatments</span><span class="cat-card-count">11 services</span></button>
+      <button class="cat-card" data-filter="injectables" style="background-image:url('/ig/18319317142214001.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Injectables</span><span class="cat-card-count">1 service</span></button>
+      <button class="cat-card" data-filter="skin" style="background-image:url('/ig/18161731393343418.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Skin &amp; Face</span><span class="cat-card-count">4 services</span></button>
+      <button class="cat-card" data-filter="laser" style="background-image:url('/ig/18179048137399434.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Laser</span><span class="cat-card-count">1 service</span></button>
+      <button class="cat-card" data-filter="body" style="background-image:url('/ig/18076157363222852.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Body</span><span class="cat-card-count">1 service</span></button>
+      <button class="cat-card" data-filter="wellness" style="background-image:url('/ig/18362511754166824.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Wellness</span><span class="cat-card-count">3 services</span></button>
+      <button class="cat-card" data-filter="aesthetic" style="background-image:url('/ig/18043915697294835.jpg')"><span class="cat-card-ov"></span><span class="cat-card-label">Aesthetic</span><span class="cat-card-count">1 service</span></button>
+    </div>
   </div>
+  <div class="svc-now"><span class="svc-now-eyebrow">Showing</span><h3 id="svc-now-label">All Treatments</h3></div>
   <div class="services-grid">
     <a href="/cosmeticinjection/" class="service-card reveal" data-cat="injectables">
       <div class="card-media">
@@ -396,8 +400,9 @@ var ls=0,h=document.getElementById('siteHeader');
 window.addEventListener('scroll',function(){var s=window.scrollY;if(s>120)h.classList.add('floating');else h.classList.remove('floating');ls=s;});
 var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el);});
-var pills=document.querySelectorAll('.cat-pill');var cards=document.querySelectorAll('.services-grid .service-card');
-pills.forEach(function(p){p.addEventListener('click',function(){pills.forEach(function(x){x.classList.remove('active');});p.classList.add('active');var f=p.getAttribute('data-filter');cards.forEach(function(c){var show=(f==='all'||c.getAttribute('data-cat')===f);c.classList.toggle('cat-hidden',!show);});});});
+var catcards=document.querySelectorAll('.cat-card');var cards=document.querySelectorAll('.services-grid .service-card');var nowLabel=document.getElementById('svc-now-label');
+var catLabels={all:'All Treatments',injectables:'Injectables',skin:'Skin & Face',laser:'Laser',body:'Body',wellness:'Wellness',aesthetic:'Aesthetic'};
+catcards.forEach(function(p){p.addEventListener('click',function(){catcards.forEach(function(x){x.classList.remove('is-active');});p.classList.add('is-active');var f=p.getAttribute('data-filter');cards.forEach(function(c){var show=(f==='all'||c.getAttribute('data-cat')===f);c.classList.toggle('cat-hidden',!show);});if(nowLabel){nowLabel.textContent=catLabels[f]||'Treatments';}var grid=document.querySelector('.services-grid');if(f!=='all'&&grid){grid.scrollIntoView({behavior:'smooth',block:'nearest'});}});});
 document.querySelectorAll('.faq-item').forEach(function(it){var q=it.querySelector('.faq-q');if(q)q.addEventListener('click',function(){it.classList.toggle('open');});});
 var f1=document.querySelector('.faq-item');if(f1)f1.classList.add('open');
 var vw=document.getElementById('videoWrap');
