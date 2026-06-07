@@ -38,8 +38,8 @@ p { color: var(--text-dim); margin-bottom: 16px; }
 .has-dropdown:hover .dropdown { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 .dropdown a { display: block; padding: 10px 24px; font-size: 12px; letter-spacing: 0.1em; }
 .dropdown a:hover { background: var(--bg-3); color: var(--gold); }
-.cta-pill { background: var(--gold); color: var(--bg) !important; padding: 13px 26px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; transition: all 0.25s ease; border: 1px solid var(--gold); }
-.cta-pill:hover { background: transparent; color: var(--gold) !important; }
+.cta-pill { background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 58%, #b8965a 100%); color: #1a1408 !important; padding: 12px 30px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; transition: transform .25s ease, box-shadow .25s ease, filter .25s ease; border: none; box-shadow: 0 6px 20px rgba(201,168,108,0.28), inset 0 1px 0 rgba(255,255,255,0.35); }
+.cta-pill:hover { transform: translateY(-1px); filter: brightness(1.06); box-shadow: 0 10px 28px rgba(201,168,108,0.42), inset 0 1px 0 rgba(255,255,255,0.4); color: #1a1408 !important; }
 
 /* MOBILE MENU */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; z-index: 120; }
@@ -759,3 +759,22 @@ border:1px solid var(--line);background:var(--bg-2,#141414);padding:16px;}
  .cn-side{position:static;max-width:420px;}
 }
 @media(max-width:600px){.th-grid{grid-template-columns:1fr;}.tp-hero{padding:100px 0 44px;}}
+.cn-sthumb video{width:100%;height:100%;object-fit:cover;display:block;}
+.cs-cthumb video{width:100%;height:100%;object-fit:cover;display:block;}
+.mz-splitimg img{width:100%;height:100%;object-fit:cover;display:block;}
+/* richer gold book buttons (mobile + primary) */
+.mobile-nav .m-cta{background:linear-gradient(135deg,var(--gold-bright) 0%,var(--gold) 58%,#b8965a 100%);color:#1a1408;font-weight:600;box-shadow:0 6px 20px rgba(201,168,108,.30),inset 0 1px 0 rgba(255,255,255,.35);border:none;}
+.btn-primary{background:linear-gradient(135deg,var(--gold-bright) 0%,var(--gold) 58%,#b8965a 100%);color:#1a1408;border:none;box-shadow:0 6px 18px rgba(201,168,108,.24),inset 0 1px 0 rgba(255,255,255,.3);}
+.btn-primary:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:0 10px 26px rgba(201,168,108,.38);}
+/* ===== mobile polish pass (defensive) ===== */
+html,body{overflow-x:hidden;}
+img,video,iframe{max-width:100%;}
+@media(max-width:600px){
+  .cn-hero{padding:96px 0 40px;}
+  .cn-hero p{font-size:16px;}
+  .cn-body{padding:48px 0;}
+  .tp-body,.tp-rel{padding:48px 0;}
+  .btn-primary,.btn-secondary,.cta-pill,.mobile-nav .m-cta{min-height:46px;display:inline-flex;align-items:center;justify-content:center;}
+  .cn-hero .btn-primary,.cn-hero .btn-secondary,.cn-cta .btn-primary,.cn-cta .btn-secondary{width:100%;}
+  .cn-cta .b{flex-direction:column;gap:10px;}
+}
