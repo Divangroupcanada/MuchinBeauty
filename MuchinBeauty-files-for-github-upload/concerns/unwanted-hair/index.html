@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RY1GJEV1YL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RY1GJEV1YL');
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="simplybook.me"]').forEach(function (a) {
+      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'book_click', { transport_type: 'beacon' }); });
+    });
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+      a.addEventListener('click', function () { if (window.gtag) gtag('event', 'call_click', { transport_type: 'beacon' }); });
+    });
+  });
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laser Hair Removal in Richmond Hill | Muchin Beauty Clinic</title>
